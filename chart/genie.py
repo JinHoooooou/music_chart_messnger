@@ -1,10 +1,10 @@
 import re
 
-from crawler.music_chart_crawler import MusicChartCrawler
+from chart.music_chart import MusicChart
 from constant.url import GENIE_CHART_URI, GENIE_ALBUM_DETAIL_URI
 
 
-class GenieChartCrawler(MusicChartCrawler):
+class Genie(MusicChart):
     def __init__(self):
         super().__init__(
             chart_url=GENIE_CHART_URI, platform_name="지니", crawl_url=GENIE_CHART_URI

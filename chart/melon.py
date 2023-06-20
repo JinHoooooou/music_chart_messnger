@@ -1,10 +1,10 @@
 import re
 
-from crawler.music_chart_crawler import MusicChartCrawler
+from chart.music_chart import MusicChart
 from constant.url import MELON_CHART_URI, MELON_ALBUM_DETAIL_URI
 
 
-class MelonChartCrawler(MusicChartCrawler):
+class Melon(MusicChart):
     def __init__(self):
         super().__init__(
             chart_url=MELON_CHART_URI, platform_name="멜론", crawl_url=MELON_CHART_URI

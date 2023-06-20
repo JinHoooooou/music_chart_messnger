@@ -1,10 +1,10 @@
 import json
 
-from crawler.music_chart_crawler import MusicChartCrawler
+from chart.music_chart import MusicChart
 from constant.url import FLO_ALBUM_DETAIL_URI, FLO_CHART_URI, FLO_CHART_API
 
 
-class FloChartCrawler(MusicChartCrawler):
+class Flo(MusicChart):
     def __init__(self):
         super().__init__(
             chart_url=FLO_CHART_URI, platform_name="플로", crawl_url=FLO_CHART_API

@@ -1,8 +1,8 @@
-from crawler.music_chart_crawler import MusicChartCrawler
+from chart.music_chart import MusicChart
 from constant.url import VIBE_ALBUM_DETAIL_URI, VIBE_CHART_URI, VIBE_CHART_API
 
 
-class VibeChartCrawler(MusicChartCrawler):
+class Vibe(MusicChart):
     def __init__(self):
         super().__init__(
             chart_url=VIBE_CHART_URI,

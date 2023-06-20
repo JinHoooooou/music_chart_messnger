@@ -3,11 +3,11 @@ from abc import ABCMeta, abstractmethod
 import requests
 from bs4 import BeautifulSoup
 
-from constant import USER_AGENT
+from constant.constant import USER_AGENT
 from music.music import Music
 
 
-class MusicChartCrawler(metaclass=ABCMeta):
+class MusicChart(metaclass=ABCMeta):
     def __init__(self, chart_url, platform_name, crawl_url, parser_features="lxml"):
         self.parser = self._parse_chart_page(crawl_url, parser_features)
 
